@@ -1,8 +1,12 @@
+import Navbar from "./components/Navbar/Navbar";
+import HeroSection from "./components/HeroSection/HeroSection";
+
 function App() {
   return (
-    <div className="App">
-      <h1>Welcome to My Portfolio</h1>
-    </div>
+    <>
+      <Navbar />
+      <HeroSection />
+    </>
   );
 }
 
