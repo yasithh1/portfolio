@@ -10,6 +10,7 @@ const Navbar = () => {
         <Link to="hero" smooth duration={500}>Home</Link>
         <Link to="projects" smooth duration={500}>Projects</Link>
         <Link to="contact" smooth duration={500}>Contact</Link>
+
       </div>
     </nav>
   );
