@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import './HeroSection.css';
-import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from "react-icons/fa";
+
 
 const HeroSection = () => {
   return (
@@ -53,10 +53,7 @@ const HeroSection = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.8 }}
         >
-          <a href="https://github.com/yasithh1" target="_blank" rel="noreferrer"><FaGithub /></a>
-          <a href="https://linkedin.com/in/yasithh1" target="_blank" rel="noreferrer"><FaLinkedin /></a>
-          <a href="https://twitter.com/yasith_dev" target="_blank" rel="noreferrer"><FaTwitter /></a>
-          <a href="mailto:yasith.dev@gmail.com"><FaEnvelope /></a>
+      
         </motion.div>
       </motion.div>
     </section>

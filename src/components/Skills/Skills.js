@@ -2,32 +2,36 @@
 import React from "react";
 import { Element } from "react-scroll";
 import { motion } from "framer-motion";
+
 import "./Skills.css";
 import {
   FaReact,
   FaJava,
   FaGithub,
+  FaPhp,
   FaCss3Alt,
+  FaCode,
   FaDatabase,
 } from "react-icons/fa";
 import {
   SiSpringboot,
-  SiFramer,
+  SiMysql,
+  SiOracle,
   SiPostgresql,
-  SiMongodb,
+  SiFlutter,
 } from "react-icons/si";
 
 const skills = [
   { name: "React", icon: <FaReact /> },
   { name: "Spring Boot", icon: <SiSpringboot /> },
   { name: "REST APIs", icon: <FaJava /> },
-  { name: "Framer Motion", icon: <SiFramer /> },
-  { name: "GitHub Pages", icon: <FaGithub /> },
-  { name: "CSS Animations", icon: <FaCss3Alt /> },
+  { name: "PHP", icon: <FaPhp /> },
+  { name: "Java", icon: <FaJava /> },
+  { name: "MYSQL", icon: <SiMysql /> },
   { name: "PostgreSQL", icon: <SiPostgresql /> },
-  { name: "Responsive Design", icon: <FaCss3Alt /> },
-  { name: "Modal Popups", icon: <FaReact /> },
-  { name: "UML Diagrams", icon: <FaDatabase /> },
+  { name: "Orcale Database", icon: <SiOracle /> },
+  { name: "C#", icon: <FaCode /> },
+  { name: "Flutter", icon: <SiFlutter /> },
 ];
 
 const Skills = () => {

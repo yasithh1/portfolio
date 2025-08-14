@@ -152,6 +152,27 @@
   z-index: 2;
 }
 
+.see-more-container {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.see-more-button {
+  background-color: #38bdf8;
+  color: #0f172a;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.see-more-button:hover {
+  background-color: #0ea5e9;
+}
+
 
 .hero-section {
   background: linear-gradient(-45deg, #0f172a, #1e293b, #30586a, #07584e);

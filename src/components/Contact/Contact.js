@@ -1,8 +1,21 @@
-// src/components/Contact/Contact.js
 import React from "react";
 import { Element } from "react-scroll";
 import { motion } from "framer-motion";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaInstagram,
+  FaTwitter,
+  FaEnvelope,
+} from "react-icons/fa";
 import "./Contact.css";
+
+const socialLinks = [
+  { name: "GitHub", icon: <FaGithub />, url: "https://github.com/yasithh1" },
+  { name: "LinkedIn", icon: <FaLinkedin />, url: "https://linkedin.com/in/yourusername" },
+  { name: "Instagram", icon: <FaInstagram />, url: "https://instagram.com/yourusername" },
+  { name: "Email", icon: <FaEnvelope />, url: "" },
+];
 
 const Contact = () => {
   return (
@@ -10,21 +23,31 @@ const Contact = () => {
       <section className="contact-section">
         <motion.div
           className="contact-content"
-          initial={{ opacity: 0, y: 40 }}
+          initial={{ opacity: 0, y: 80 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2>Contact Me</h2>
+          <h2 className="contact-title">Connect With Me</h2>
           <p className="contact-description">
-            Have a project in mind, or just want to say hi? Reach out and let’s create something amazing.
+            Let’s stay in touch! Find me on these platforms:
           </p>
-          <form className="contact-form" onSubmit={(e) => e.preventDefault()}>
-            <input type="text" placeholder="Your Name" required />
-            <input type="email" placeholder="Your Email" required />
-            <textarea rows="5" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-          </form>
+          <div className="social-icons">
+            {socialLinks.map((link, index) => (
+              <motion.a
+                key={index}
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-icon"
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.2 }}
+              >
+                {link.icon}
+              </motion.a>
+            ))}
+          </div>
         </motion.div>
       </section>
     </Element>

@@ -11,7 +11,7 @@ const Navbar = () => {
         <Link to="projects" smooth duration={500}>Projects</Link>
         <Link to="contact" smooth duration={500}>Contact</Link>
         <Link to="skills" smooth duration={500}>Skills</Link>
-        <Link to="qualifications" smooth duration={500}>Skills</Link>
+        <Link to="qualifications" smooth duration={500}>Qualifications</Link>
 
       </div>
     </nav>

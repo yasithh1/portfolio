@@ -3,18 +3,21 @@ import React, { useState } from "react";
 import { Element } from "react-scroll";
 import { motion } from "framer-motion";
 import "./Projects.css";
-import projects from "./projectsData";
+import projects from "./projectsData"; // your array
 import ProjectModal from "./ProjectModal";
 
 const Projects = () => {
   const [selected, setSelected] = useState(null);
+  const [showAll, setShowAll] = useState(false);
+
+  const visibleProjects = showAll ? projects : projects.slice(0, 3);
 
   return (
     <Element name="projects">
       <section className="projects-section">
         <h2 className="projects-title">Projects</h2>
         <div className="projects-grid">
-          {projects.map((project, index) => (
+          {visibleProjects.map((project, index) => (
             <motion.div
               key={index}
               className="project-card"
@@ -30,6 +33,13 @@ const Projects = () => {
             </motion.div>
           ))}
         </div>
+
+        <div className="see-more-container">
+          <button className="see-more-button" onClick={() => setShowAll(!showAll)}>
+            {showAll ? "See Less" : "See More"}
+          </button>
+        </div>
+
         <ProjectModal project={selected} onClose={() => setSelected(null)} />
       </section>
     </Element>

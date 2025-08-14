@@ -5,19 +5,24 @@ import "./Qualifications.css";
 
 const qualifications = [
   {
-    title: "🎓 B.Sc. in Computer Science",
+    title: "Oracle Academy Database Design Certification",
     institution: "University of Colombo",
-    year: "2021",
+    year: "2024",
   },
   {
-    title: "🧠 Spring Boot Certification",
+    title: "Adobe Photoshop Certification",
     institution: "Udemy",
+    year: "2022",
+  },
+  {
+    title: "Diploma In Software Engineering ",
+    institution: "NIBM",
     year: "2023",
   },
   {
-    title: "💻 Frontend Mastery with React",
-    institution: "FreeCodeCamp",
-    year: "2024",
+    title: "Higher National Diploma In Software Engineering ",
+    institution: "NIBM",
+    year: "2023",
   },
 ];
 
