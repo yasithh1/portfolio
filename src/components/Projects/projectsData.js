@@ -36,10 +36,10 @@ const projects = [
   },
   {
     title: "Smart Backpack",
-    short: "Flutter with react.",
+    short: "Flutter.",
     description:
-      "A secure backend service for managing tasks with user authentication, role-based access, and PostgreSQL integration. Built with Spring Boot and deployed via Render.",
-    tech: ["Flutter", "JWT", "PostgreSQL"],
+      "A secure backend service for managing tasks with user authentication, role-based access, and Firebase integration. Built with Spring Boot and deployed via Render.",
+    tech: ["Flutter", "C++", "Firebase"],
     image: taskImg,
     link: "https://github.com/yasithh1/task-tracker-api",
   },
