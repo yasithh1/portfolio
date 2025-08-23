@@ -1,6 +1,6 @@
 .contact-section {
   padding: 80px 20px;
-  background-color: #0f172a;
+  background: #000; /* same dark background as other sections */
   color: #fff;
   text-align: center;
 }

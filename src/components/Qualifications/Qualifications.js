@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Element } from "react-scroll";
 import { motion } from "framer-motion";
 import "./Qualifications.css";
@@ -15,18 +15,25 @@ const qualifications = [
     year: "2022",
   },
   {
-    title: "Diploma In Software Engineering ",
+    title: "Diploma In Software Engineering",
     institution: "NIBM",
     year: "2023",
   },
   {
-    title: "Higher National Diploma In Software Engineering ",
+    title: "Higher National Diploma In Software Engineering",
     institution: "NIBM",
     year: "2023",
   },
 ];
 
 const Qualifications = () => {
+  const [showAll, setShowAll] = useState(false);
+
+  // Limit to first 3 items when showAll is false
+  const visibleQualifications = showAll
+    ? qualifications
+    : qualifications.slice(0, 3);
+
   return (
     <Element name="qualifications">
       <section className="qualifications-section">
@@ -40,7 +47,7 @@ const Qualifications = () => {
           Qualifications
         </motion.h2>
         <div className="qualification-grid">
-          {qualifications.map((q, index) => (
+          {visibleQualifications.map((q, index) => (
             <motion.div
               key={index}
               className="qualification-card"
@@ -55,6 +62,16 @@ const Qualifications = () => {
             </motion.div>
           ))}
         </div>
+
+        {/* Show More / Show Less button */}
+        {qualifications.length > 3 && (
+          <button
+            className="show-more-btn"
+            onClick={() => setShowAll(!showAll)}
+          >
+            {showAll ? "Show Less" : "Show More"}
+          </button>
+        )}
       </section>
     </Element>
   );

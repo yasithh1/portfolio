@@ -4,7 +4,7 @@
   color: #f1f5f9;
   text-align: center;
   overflow: hidden;
-  background-color: #0f172a;
+  background: #000; /* same as Projects/Hero section */
   z-index: 1;
 }
 
@@ -20,17 +20,44 @@
 }
 
 .skills-title,
-.skills-grid {
+.skills-grid,
+.skills-marquee {
   position: relative;
   z-index: 1;
 }
 
+
 .skills-title {
   font-size: 2.5rem;
   margin-bottom: 40px;
-  color: #38bdf8;
+  color: #ffffff;
 }
 
+.skills-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #38bdf8;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+
+/* New marquee container */
+.skills-marquee {
+  overflow: hidden;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.skills-track {
+  display: flex;
+  gap: 20px;
+  animation: scroll-left 20s linear infinite;
+}
+
+/* Original grid retained (if you still need it elsewhere) */
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
@@ -52,6 +79,7 @@
   flex-direction: column;
   align-items: center;
   backdrop-filter: blur(4px);
+  min-width: 140px; /* Ensures consistent width for scrolling */
 }
 
 .skill-card:hover {
@@ -65,4 +93,14 @@
   font-size: 2rem;
   margin-bottom: 10px;
   color: #38bdf8;
+}
+
+/* Keyframes for marquee */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }

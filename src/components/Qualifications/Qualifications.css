@@ -1,13 +1,13 @@
 .qualifications-section {
   padding: 100px 20px;
-  background: linear-gradient(135deg, #0f172a, #1e293b);
-  color: #e2e8f0;
+  background: #000; /* same as Projects section */
+  color: #e2e8f0;   /* same text color */
   text-align: center;
 }
 
 .section-title {
   font-size: 2.5rem;
-  color: #38bdf8;
+  color: #ffffff;
   margin-bottom: 50px;
   position: relative;
 }
@@ -24,39 +24,58 @@
 
 .qualification-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
-  max-width: 1000px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
 .qualification-card {
   background-color: #0f172a;
-  padding: 25px;
+  padding: 30px;
   border: 1px solid #334155;
-  border-radius: 12px;
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease, border-color 0.3s ease;
+  border-radius: 14px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .qualification-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px) scale(1.02);
   border-color: #38bdf8;
+  box-shadow: 0 12px 30px rgba(56, 189, 248, 0.3);
 }
 
 .qualification-card h3 {
-  font-size: 1.25rem;
+  font-size: 1.4rem;
   color: #38bdf8;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .qualification-card p {
   font-size: 1rem;
   color: #94a3b8;
-  margin-bottom: 5px;
+  margin-bottom: 6px;
 }
 
 .qualification-card span {
   font-size: 0.9rem;
   color: #64748b;
+}
+
+.show-more-btn {
+  background-color: #38bdf8;
+  color: #0f172a;
+  padding: 12px 28px;
+  margin-top: 40px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.show-more-btn:hover {
+  background-color: #0ea5e9;
+  transform: translateY(-3px);
 }

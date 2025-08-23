@@ -14,7 +14,7 @@ const socialLinks = [
   { name: "GitHub", icon: <FaGithub />, url: "https://github.com/yasithh1" },
   { name: "LinkedIn", icon: <FaLinkedin />, url: "https://linkedin.com/in/yourusername" },
   { name: "Instagram", icon: <FaInstagram />, url: "https://instagram.com/yourusername" },
-  { name: "Email", icon: <FaEnvelope />, url: "" },
+  { name: "Email", icon: <FaEnvelope />, url: "mailto:yasithpasindu7@gmail.com" },
 ];
 
 const Contact = () => {

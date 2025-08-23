@@ -1,8 +1,6 @@
-// src/components/Skills/Skills.js
 import React from "react";
 import { Element } from "react-scroll";
 import { motion } from "framer-motion";
-
 import "./Skills.css";
 import {
   FaReact,
@@ -29,7 +27,7 @@ const skills = [
   { name: "Java", icon: <FaJava /> },
   { name: "MYSQL", icon: <SiMysql /> },
   { name: "PostgreSQL", icon: <SiPostgresql /> },
-  { name: "Orcale Database", icon: <SiOracle /> },
+  { name: "Oracle Database", icon: <SiOracle /> },
   { name: "C#", icon: <FaCode /> },
   { name: "Flutter", icon: <SiFlutter /> },
 ];
@@ -42,20 +40,17 @@ const Skills = () => {
           <source src="/code-bg.mp4" type="video/mp4" />
         </video>
         <h2 className="skills-title">Skills</h2>
-        <div className="skills-grid">
-          {skills.map((skill, index) => (
-            <motion.div
-              key={index}
-              className="skill-card"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.4, delay: index * 0.1 }}
-              viewport={{ once: true }}
-            >
-              <div className="skill-icon">{skill.icon}</div>
-              <span>{skill.name}</span>
-            </motion.div>
-          ))}
+
+        {/* Marquee container */}
+        <div className="skills-marquee">
+          <div className="skills-track">
+            {skills.concat(skills).map((skill, index) => (
+              <div key={index} className="skill-card">
+                <div className="skill-icon">{skill.icon}</div>
+                <span>{skill.name}</span>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
     </Element>
