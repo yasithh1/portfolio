@@ -14,7 +14,7 @@ const projects = [
       "Developed a mobile fitness tracker application to support users in achieving their health goals. Integrated features including personalized workout programs, nutrition plans, and real-time calorie tracking during activities like running and walking.",
     tech: ["Kotlin", "Firebase","Java","Android Studio"],
     image: Fitness,
-    link: "https://github.com/yasithh1/uml-generator",
+    link: "https://github.com/yasithh1/Fitness_Tracker.git",
   },
     {
     title: "After You",
@@ -23,7 +23,7 @@ const projects = [
       "A fully responsive portfolio built with React, featuring animated sections, smooth scroll, and GitHub Pages deployment. Designed to showcase frontend and backend skills.",
     tech: ["React", "MySQL", "Node.js"],
     image: AfterYouImg,
-    link: "https://github.com/yasithh1/portfolio",
+    link: "https://github.com/hirunaPankaja/AfterYou.git",
   },
    {
     title: "Project Management System",
@@ -32,7 +32,7 @@ const projects = [
       "Created a project management system to handle personnel, property, and inventory data. created a responsive and effective web interface for managing important business data by using Java for the backend and React for the frontend.",
     tech: ["React", "Java", "MySQL","tailwind.css"],
     image: KellesImg,
-    link: "https://github.com/yasithh1/uml-generator",
+    link: "https://github.com/hirunaPankaja/project-management-system.git",
   },
   {
     title: "Smart Backpack",
@@ -41,7 +41,7 @@ const projects = [
       "A secure backend service for managing tasks with user authentication, role-based access, and Firebase integration. Built with Spring Boot and deployed via Render.",
     tech: ["Flutter", "C++", "Firebase"],
     image: taskImg,
-    link: "https://github.com/yasithh1/task-tracker-api",
+    link: "https://github.com/hirunaPankaja/Smart-Backpack.git",
   },
   
   {

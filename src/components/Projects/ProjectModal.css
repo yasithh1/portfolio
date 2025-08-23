@@ -1,0 +1,133 @@
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(15, 23, 42, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  animation: fadeIn 0.3s ease forwards;
+}
+
+/* Modal Content */
+.modal-content {
+  background: linear-gradient(145deg, #0f172a, #000000);
+  color: #e2e8f0;
+  padding: 30px 25px;
+  border-radius: 15px;
+  max-width: 600px;
+  width: 90%;
+  position: relative;
+  text-align: left;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+  transform: scale(0.95);
+  animation: scaleUp 0.3s ease forwards;
+}
+
+/* Modal Image */
+.modal-image {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  object-fit: cover;
+  max-height: 300px;
+}
+
+/* Modal Headings */
+.modal-content h3 {
+  font-size: 1.75rem;
+  color: #38bdf8;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.modal-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #cbd5e1;
+  margin-bottom: 20px;
+}
+
+/* Tech Stack Tags */
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.tech-stack li {
+  background: #334155;
+  color: #94a3b8;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* GitHub Link Button */
+.modal-content a {
+  display: inline-block;
+  background-color: #38bdf8;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.modal-content a:hover {
+  background-color: #0ea5e9;
+  transform: translateY(-2px);
+}
+
+/* Close Button */
+.close-button {
+  position: absolute;
+  top: 2px;
+  left: 96%;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: #94a3b8;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.close-button:hover {
+  color: #38bdf8;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes scaleUp {
+  0% { transform: scale(0.95); }
+  100% { transform: scale(1); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .modal-content {
+    padding: 20px 15px;
+  }
+
+  .modal-image {
+    max-height: 220px;
+  }
+
+  .modal-content h3 {
+    font-size: 1.5rem;
+  }
+}
