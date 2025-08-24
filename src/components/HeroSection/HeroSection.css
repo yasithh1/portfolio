@@ -30,10 +30,36 @@
   color: #e2e8f0;
 }
 
+.circle-decoration {
+  position: absolute;
+  top: 12%;
+  left: 8%;
+  width: 12%;
+  height: 22%;
+  border-radius: 50%;
+  z-index: 1; /* behind text */
+  border: 4px solid #38bdf8;
+  background: transparent;
+  box-sizing: border-box;
+  /* Add glowing blur effect */
+  box-shadow: 0 0 10px 1px #38bdf8, 0 0 20px 1px #0073a9;
+  animation: glowPulse 2.5s ease-in-out infinite;
+}
+
+@keyframes glowPulse {
+  0%, 100% {
+    box-shadow: 0 0 10px 1px #38bdf8, 0 0 10px 1px #0ea5e9;
+  }
+  40% {
+    box-shadow: 0 0 20px 1px #38bdf8, 0 0 20px 4px #0ea5e9;
+  }
+}
+
 .hero-content h1 {
   font-size: 3.2rem;
   margin-bottom: 0.5rem;
   font-weight: 700;
+  margin-top: 15%;
 }
 
 .highlight {

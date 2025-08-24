@@ -8,6 +8,12 @@ const HeroSection = () => {
       <div className="hero-wrapper">
         {/* Left: Text */}
         <div className="hero-content">
+
+         <div className="circle-decoration">
+          
+
+         </div>
+
           <h1>
             Hello, I’m <span className="highlight">Yasith</span>
           </h1>
@@ -17,7 +23,7 @@ const HeroSection = () => {
           <p className="subtext">
             Specialized in React, Spring Boot & design-driven engineering. Passionate about building clean architecture and delightful interfaces.
           </p>
-   
+      
         </div>
 
         {/* Right: Spline */}
