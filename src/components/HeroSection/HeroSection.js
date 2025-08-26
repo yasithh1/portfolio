@@ -1,5 +1,7 @@
 import React from "react";
 import Spline from "@splinetool/react-spline";
+import profileImg from '../../assets/pfp1.jpg';
+
 import "./HeroSection.css";
 
 const HeroSection = () => {
@@ -9,8 +11,9 @@ const HeroSection = () => {
         {/* Left: Text */}
         <div className="hero-content">
 
-         <div className="circle-decoration">
-          
+       <div className="circle-decoration">
+
+          <img src={profileImg} alt="profile" />
 
          </div>
 
