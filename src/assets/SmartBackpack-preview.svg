@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Smart Backpack IoT project</title>
+  <desc id="desc">An illustrated connected backpack with safety sensors and a companion mobile control screen.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0a1720"/><stop offset="1" stop-color="#112a2b"/></linearGradient>
+    <linearGradient id="bag" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#1e6a61"/><stop offset="1" stop-color="#123c42"/></linearGradient>
+    <linearGradient id="screen" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#9bf2d0"/><stop offset="1" stop-color="#54d4ad"/></linearGradient>
+    <filter id="softGlow" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="22"/></filter>
+  </defs>
+  <rect width="1200" height="720" rx="28" fill="url(#bg)"/>
+  <circle cx="510" cy="375" r="230" fill="#44d8b3" opacity=".12" filter="url(#softGlow)"/>
+  <path d="M0 82h1200" stroke="#29404a"/>
+  <rect x="58" y="25" width="34" height="34" rx="10" fill="url(#screen)"/>
+  <path d="M68 43h14M75 36v14" stroke="#0a1720" stroke-width="3" stroke-linecap="round"/>
+  <text x="105" y="51" fill="#f0f6f5" font-family="Arial,sans-serif" font-size="25" font-weight="700">Smart Backpack</text>
+  <text x="949" y="49" fill="#a8bcc1" font-family="Arial,sans-serif" font-size="15">IoT　 Safety　 Mobile control</text>
+  <text x="65" y="156" fill="#8ee9ca" font-family="Arial,sans-serif" font-size="14" font-weight="700" letter-spacing="1.6">CONNECTED IOT PROJECT</text>
+  <text x="65" y="220" fill="#f2f7f6" font-family="Arial,sans-serif" font-size="43" font-weight="700">Smart carry.</text>
+  <text x="65" y="270" fill="#f2f7f6" font-family="Arial,sans-serif" font-size="43" font-weight="700">Smarter journeys.</text>
+  <text x="68" y="322" fill="#9fb3b8" font-family="Arial,sans-serif" font-size="18">A connected backpack concept with sensor</text>
+  <text x="68" y="350" fill="#9fb3b8" font-family="Arial,sans-serif" font-size="18">modules and a companion mobile app.</text>
+  <g transform="translate(250 390)">
+    <path d="M105 36c0-58 39-99 91-99s91 41 91 99" fill="none" stroke="#75d9bc" stroke-width="20" stroke-linecap="round"/>
+    <path d="M107 31c-44 9-70 49-70 104v103c0 47 31 79 78 79h163c47 0 78-32 78-79V135c0-55-26-95-70-104l-18 72H125z" fill="url(#bag)" stroke="#5bbda5" stroke-width="5"/>
+    <path d="M92 143c0-21 17-38 38-38h131c21 0 38 17 38 38v93H92z" fill="#174e4e" stroke="#65cbb0" stroke-width="4"/>
+    <path d="M142 140v64c0 15 12 27 27 27h53c15 0 27-12 27-27v-64" fill="#12383e" stroke="#3a8b7e" stroke-width="4"/>
+    <rect x="181" y="99" width="27" height="15" rx="7" fill="#a1f5d8"/>
+    <circle cx="195" cy="106" r="5" fill="#0b292e"/>
+    <path d="M348 146h48M348 168h38M348 190h28" stroke="#72e1c0" stroke-width="4" stroke-linecap="round" opacity=".85"/>
+    <path d="M390 113c20 18 20 51 0 69M410 96c33 30 33 73 0 103" fill="none" stroke="#72e1c0" stroke-width="4" stroke-linecap="round" opacity=".55"/>
+  </g>
+  <g transform="translate(815 188)">
+    <rect x="0" y="0" width="246" height="420" rx="34" fill="#dbe9e8"/>
+    <rect x="10" y="12" width="226" height="396" rx="26" fill="#0f1d27"/>
+    <rect x="90" y="22" width="66" height="7" rx="4" fill="#3a4a50"/>
+    <text x="31" y="73" fill="#e9f4f1" font-family="Arial,sans-serif" font-size="16" font-weight="700">Backpack status</text>
+    <rect x="27" y="94" width="192" height="120" rx="18" fill="#142d31" stroke="#28584f"/>
+    <circle cx="122" cy="151" r="34" fill="#1f4d45"/>
+    <path d="M110 153l9 9 18-22" fill="none" stroke="#8ff0ce" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="78" y="199" fill="#91e6cb" font-family="Arial,sans-serif" font-size="13">All sensors active</text>
+    <text x="30" y="253" fill="#98acb2" font-family="Arial,sans-serif" font-size="13">CONNECTED MODULES</text>
+    <rect x="27" y="270" width="192" height="42" rx="12" fill="#172831"/><circle cx="48" cy="291" r="6" fill="#79e1bf"/><text x="64" y="296" fill="#e5efed" font-family="Arial,sans-serif" font-size="13">Safety sensors</text>
+    <rect x="27" y="321" width="192" height="42" rx="12" fill="#172831"/><circle cx="48" cy="342" r="6" fill="#79e1bf"/><text x="64" y="347" fill="#e5efed" font-family="Arial,sans-serif" font-size="13">Mobile connection</text>
+    <rect x="27" y="374" width="192" height="23" rx="11" fill="url(#screen)"/><text x="89" y="390" fill="#0d302d" font-family="Arial,sans-serif" font-size="12" font-weight="700">Connected</text>
+  </g>
+  <text x="66" y="660" fill="#8ea7ad" font-family="Arial,sans-serif" font-size="15">ARDUINO IDE　 ·　 ESP32　 ·　 MOBILE APP</text>
+</svg>

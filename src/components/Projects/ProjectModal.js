@@ -16,9 +16,11 @@ const ProjectModal = ({ project, onClose }) => {
             <li key={i}>{tech}</li>
           ))}
         </ul>
-        <a href={project.link} target="_blank" rel="noopener noreferrer">
-          View on GitHub →
-        </a>
+        {project.link && (
+          <a href={project.link} target="_blank" rel="noopener noreferrer">
+            {project.linkLabel || "View on GitHub →"}
+          </a>
+        )}
         <button className="close-button" onClick={onClose}>×</button>
       </div>
     </div>
@@ -26,3 +28,6 @@ const ProjectModal = ({ project, onClose }) => {
 };
 
 export default ProjectModal;
+
+
+

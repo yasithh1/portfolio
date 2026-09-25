@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
-import Spline from "@splinetool/react-spline";
 import profileImg from '../../assets/pfp1.jpg';
 import resumePdf from "../../assets/Yasith_Pasindu.pdf";
+import projects from "../Projects/projectsData";
 
 import "./HeroSection.css";
 
@@ -118,7 +118,7 @@ const HeroSection = () => {
           <div className="hero-stats reveal reveal-up" style={{ transitionDelay: "0.46s" }}>
             {[
               { num: "2+",  label: "Years Exp"    },
-              { num: "15+", label: "Projects"     },
+              { num: String(projects.length), label: "Projects"     },
               { num: "10+", label: "Technologies" },
             ].map(({ num, label }, i) => (
               <React.Fragment key={label}>
@@ -132,10 +132,14 @@ const HeroSection = () => {
           </div>
         </div>
 
-        {/* ── RIGHT: Spline ── */}
-        <div className="spline-container reveal reveal-fade" style={{ transitionDelay: "0.18s" }}>
-          <Spline scene="https://prod.spline.design/F3OwyogALYtj52iZ/scene.splinecode" />
-        </div>
+        {/* Lightweight CSS animation; no external scene or image required. */}
+      <div className="hero-ambient" aria-hidden="true">
+        <div className="ambient-glow ambient-glow--mint" />
+        <div className="ambient-glow ambient-glow--blue" />
+        <div className="ambient-orbit ambient-orbit--one"><span /></div>
+        <div className="ambient-orbit ambient-orbit--two"><span /></div>
+        <div className="ambient-core" />
+      </div>
       </div>
 
       <div className="bottom-square" />
@@ -156,3 +160,4 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+

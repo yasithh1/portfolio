@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
 import './Navbar.css';
 import { FiMenu, FiX } from 'react-icons/fi';
+import resumePdf from '../../assets/Yasith_Pasindu.pdf';
 
 const navItems = ['hero', 'projects', 'qualifications', 'skills', 'contact'];
 const labels   = { hero: 'Home', projects: 'Projects', qualifications: 'Qualifications', skills: 'Skills', contact: 'Contact' };
@@ -47,7 +48,7 @@ const Navbar = () => {
 
         {/* CTA button */}
         <a
-          href="/resume.pdf"
+          href={resumePdf}
           target="_blank"
           rel="noreferrer"
           className="nav-resume-btn"

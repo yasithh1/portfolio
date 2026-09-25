@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import "./Skills.css";
 import {
   FaReact, FaJava, FaGithub, FaPhp,
-  FaCss3Alt, FaCode, FaDatabase,
+  FaCode, FaDatabase,
 } from "react-icons/fa";
 import {
   SiSpringboot, SiMysql, SiOracle,

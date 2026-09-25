@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap');
+:root { --ink: #090d14; --panel: #101722; --panel-soft: #141e2a; --text: #edf3f7; --muted: #9aa9b7; --accent: #70e1c1; --line: rgba(206,226,237,.12); --container: 1160px; }
+html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+body { background: var(--ink); color: var(--text); font-family: 'Manrope', 'Segoe UI', sans-serif; }
+::selection { background: var(--accent); color: var(--ink); }
+a { color: inherit; }
+button, input, textarea { font: inherit; }
+button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.navbar { padding: 18px max(28px, calc((100vw - var(--container))/2)); background: rgba(9,13,20,.74); border-bottom-color: var(--line); }
+.navbar--scrolled { padding-top: 12px; padding-bottom: 12px; background: rgba(9,13,20,.94); border-bottom-color: var(--line); }
+.nav-logo { letter-spacing: -.06em; }
+.nav-link { font-weight: 600; }
+.nav-resume-btn { color: var(--ink); background: var(--accent); border-color: var(--accent); border-radius: 999px; padding: 10px 18px; }
+.nav-resume-btn:hover { color: var(--ink); background: #9af0d7; border-color: #9af0d7; }
+section { scroll-margin-top: 76px; }
+.hero-section, .projects-section, .qualifications-section, .skills-section, .contact-section { background-color: var(--ink); }
+.hero-section { min-height: 760px; padding: 140px 28px 90px; }
+.hero-wrapper { max-width: var(--container); margin: 0 auto; gap: 48px; }
+.hero-content { max-width: 620px; }
+.hero-content h1 { letter-spacing: -.06em; line-height: 1.05; }
+.hero-content .highlight, .typing-text, .c-highlight { color: var(--accent); }
+.hero-badge { border-color: rgba(112,225,193,.28); background: rgba(112,225,193,.08); color: var(--accent); }
+.hero-button { border-radius: 999px; }
+.hero-button--outline { border-color: var(--line); }
+.spline-container { border-radius: 24px; overflow: hidden; }
+.projects-section, .qualifications-section, .skills-section, .contact-section { padding: 104px max(28px, calc((100vw - var(--container))/2)); }
+.projects-title, .section-title, .skills-title { color: var(--text); font-size: clamp(2rem, 4vw, 3.25rem); letter-spacing: -.055em; margin-bottom: 18px; }
+.projects-controls { gap: 18px; }
+.proj-search-box, .proj-tag, .skill-filter-btn, .qual-filter-btn { border-color: var(--line); }
+.proj-search-box { background: var(--panel); border-radius: 12px; }
+.proj-tag, .skill-filter-btn, .qual-filter-btn { border-radius: 999px; }
+.proj-tag.active, .skill-filter-btn.active, .qual-filter-btn.active { background: var(--accent); border-color: var(--accent); color: var(--ink); }
+.projects-grid, .qualification-grid { gap: 22px; }
+.project-card, .qualification-card, .skill-card-v2, .contact-form-card { background: var(--panel); border: 1px solid var(--line); border-radius: 18px; box-shadow: 0 16px 48px rgba(0,0,0,.16); }
+.project-card { overflow: hidden; }
+.card-image { transition: transform .45s ease; }
+.project-card:hover .card-image { transform: scale(1.035); }
+.card-body h3, .qualification-card h3 { color: var(--text); letter-spacing: -.025em; }
+.card-body p, .qual-institution, .contact-description { color: var(--muted); }
+.card-tag, .qual-type-chip, .skill-cat-chip { border-radius: 999px; }
+.see-more-button, .show-more-btn, .btn-primary { border-radius: 999px; }
+.skill-card-v2 { box-shadow: none; }
+.skills-bg { opacity: .08; }
+.skills-section::before { background: linear-gradient(180deg, rgba(9,13,20,.75), var(--ink)); }
+.contact-form-card { padding: clamp(22px, 4vw, 42px); }
+.contact-form input, .contact-form textarea { background: #0b111a; border: 1px solid var(--line); border-radius: 10px; color: var(--text); }
+.contact-form input:focus, .contact-form textarea:focus { border-color: var(--accent); }
+.social-icon { color: var(--muted); }
+@media (max-width: 768px) {
+  .navbar { padding: 14px 20px; }
+  .navbar--scrolled { padding: 10px 20px; }
+  .hero-section { min-height: auto; padding: 112px 20px 72px; }
+  .hero-wrapper { gap: 28px; }
+  .projects-section, .qualifications-section, .skills-section, .contact-section { padding: 76px 20px; }
+  .nav-links { background: #101722; border-color: var(--line); }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}
+
+.hero-button, .btn-primary, .see-more-button, .show-more-btn { background: var(--accent); border-color: var(--accent); color: var(--ink); font-weight: 700; }
+.hero-button:hover, .btn-primary:hover, .see-more-button:hover, .show-more-btn:hover { background: #9af0d7; border-color: #9af0d7; color: var(--ink); }
+.hero-button--outline { background: transparent; color: var(--text); border-color: var(--line); }
+.hero-button--outline:hover { background: rgba(112,225,193,.1); border-color: var(--accent); color: var(--accent); }
+.hero-button--ghost { background: transparent; color: var(--muted); border-color: var(--line); }
+.hero-section { isolation: isolate; }
+.hero-content { background: linear-gradient(110deg, rgba(9,13,20,.96), rgba(9,13,20,.72) 72%, transparent); }
+.hero-ambient { position: absolute; z-index: 0; width: min(52vw, 640px); aspect-ratio: 1; right: max(2vw, calc((100vw - var(--container))/2)); top: 50%; transform: translateY(-50%); pointer-events: none; display: grid; place-items: center; opacity: .86; }
+.ambient-glow { position: absolute; width: 64%; aspect-ratio: 1; border-radius: 50%; filter: blur(52px); animation: ambient-breathe 7s ease-in-out infinite alternate; }
+.ambient-glow--mint { background: rgba(112,225,193,.2); transform: translate(-18%, 12%); }
+.ambient-glow--blue { width: 48%; background: rgba(53,142,207,.17); transform: translate(28%, -20%); animation-delay: -3s; }
+.ambient-core { position: absolute; width: 30%; aspect-ratio: 1; border-radius: 50%; background: radial-gradient(circle at 35% 32%, rgba(222,255,246,.9), rgba(112,225,193,.28) 16%, rgba(112,225,193,.08) 52%, transparent 74%); box-shadow: 0 0 80px rgba(112,225,193,.16), inset 0 0 40px rgba(112,225,193,.08); animation: core-float 8s ease-in-out infinite; }
+.ambient-orbit { position: absolute; width: 76%; height: 34%; border: 1px solid rgba(177,242,225,.28); border-radius: 50%; transform: rotate(-28deg); animation: orbit-drift 24s linear infinite; }
+.ambient-orbit--two { width: 94%; height: 48%; border-color: rgba(112,225,193,.15); transform: rotate(48deg); animation-duration: 34s; animation-direction: reverse; }
+.ambient-orbit span { position: absolute; width: 9px; height: 9px; top: 12%; left: 18%; border-radius: 50%; background: #b7f5e3; box-shadow: 0 0 18px 5px rgba(112,225,193,.48); }
+.ambient-orbit--two span { width: 6px; height: 6px; top: 80%; left: 72%; background: #93c5fd; box-shadow: 0 0 18px 4px rgba(96,165,250,.44); }
+@keyframes ambient-breathe { from { opacity: .55; scale: .88; } to { opacity: 1; scale: 1.12; } }
+@keyframes core-float { 0%,100% { transform: translateY(-8px) scale(.96); } 50% { transform: translateY(8px) scale(1.04); } }
+@keyframes orbit-drift { to { rotate: 332deg; } }
+@media (max-width: 768px) { .hero-ambient { width: 96vw; right: -42vw; top: auto; bottom: -14vw; transform: none; opacity: .42; } .hero-content { background: linear-gradient(180deg, rgba(9,13,20,.88), rgba(9,13,20,.68)); } }
+@media (prefers-reduced-motion: reduce) { .ambient-glow, .ambient-core, .ambient-orbit { animation: none !important; } }
+.bottom-square { display: none; }
+.particle { background: var(--accent); }
+.stat-number, .scroll-mouse { color: var(--accent); border-color: var(--accent); }
+.scroll-wheel { background: var(--accent); }
+.circle-decoration { animation-name: mint-glow; }
+@keyframes mint-glow { 0%,100% { box-shadow: 0 0 12px 1px rgba(112,225,193,.7), 0 0 26px 2px rgba(112,225,193,.26); } 40% { box-shadow: 0 0 24px 3px rgba(112,225,193,.84), 0 0 46px 6px rgba(112,225,193,.32); } }
+/* Final hero composition: one shared background, text aligned further left. */
+.hero-section { background: radial-gradient(ellipse at 78% 48%, rgba(55,111,112,.13), transparent 52%), radial-gradient(ellipse at 18% 18%, rgba(28,53,77,.16), transparent 48%), var(--ink); }
+.hero-wrapper { max-width: 1280px; gap: 24px; }
+.hero-content { max-width: 640px; padding-left: 28px; background: transparent !important; }
+.hero-ambient { width: min(72vw, 900px); right: -5vw; opacity: .54; mix-blend-mode: screen; }
+.ambient-glow--mint { background: rgba(112,225,193,.16); }
+.ambient-glow--blue { background: rgba(53,142,207,.14); }
+@media (max-width: 768px) {
+  .hero-wrapper { max-width: 100%; }
+  .hero-content { padding-left: 20px; background: transparent !important; }
+  .hero-ambient { width: 120vw; right: -46vw; bottom: -14vw; opacity: .3; mix-blend-mode: screen; }
+}
+
+.circle-decoration { left: 6%; }
+@media (max-width: 768px) { .circle-decoration { position: relative; left: -24px; } }
+
+

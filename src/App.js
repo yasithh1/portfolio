@@ -4,6 +4,7 @@ import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contact/Contact";
 import Skills from "./components/Skills/Skills";
 import Qualifications from "./components/Qualifications/Qualifications";
+import "./portfolio-polish.css";
 
 function App() {
   return (
@@ -22,3 +23,5 @@ function App() {
 
 
 export default App;
+
+

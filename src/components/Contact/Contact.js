@@ -3,16 +3,14 @@ import React, { useState, useRef } from "react";
 import { Element } from "react-scroll";
 import { motion, useInView } from "framer-motion";
 import {
-  FaGithub, FaLinkedin, FaInstagram,
+  FaGithub,
   FaEnvelope, FaPaperPlane, FaMapMarkerAlt, FaClock,
 } from "react-icons/fa";
 import "./Contact.css";
 
 const socialLinks = [
   { name: "GitHub",    icon: <FaGithub />,    url: "https://github.com/yasithh1",               hoverColor: "#f0f6ff" },
-  { name: "LinkedIn",  icon: <FaLinkedin />,   url: "https://linkedin.com/in/yourusername",      hoverColor: "#0a66c2" },
-  { name: "Instagram", icon: <FaInstagram />,  url: "https://instagram.com/yourusername",        hoverColor: "#e1306c" },
-  { name: "Email",     icon: <FaEnvelope />,   url: "mailto:yasithpasindu7@gmail.com",           hoverColor: "#38bdf8" },
+    { name: "Email",     icon: <FaEnvelope />,   url: "mailto:yasithpasindu7@gmail.com",           hoverColor: "#38bdf8" },
 ];
 
 const infoItems = [
@@ -62,7 +60,7 @@ const Contact = () => {
     setStatus("sending");
 
     try {
-      const result = await emailjs.send(
+      await emailjs.send(
         "service_9zzucc9",
         "template_h5y5nec",
         {
@@ -73,7 +71,7 @@ const Contact = () => {
         },
         "-O3ryflpsj3LZTIj7"
       );
-      console.log("EmailJS success:", result);
+      
       setStatus("success");
       setForm(INITIAL);
     } catch (err) {
@@ -232,3 +230,4 @@ const Contact = () => {
 };
 
 export default Contact;
+

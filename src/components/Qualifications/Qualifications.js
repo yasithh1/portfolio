@@ -7,7 +7,7 @@ const qualifications = [
   { title: "Oracle Academy Database Design Certification", institution: "University of Colombo", year: "2024", type: "Certification" },
   { title: "Adobe Photoshop Certification",               institution: "Udemy",                 year: "2022", type: "Certification" },
   { title: "Diploma In Software Engineering",             institution: "NIBM",                  year: "2023", type: "Diploma"      },
-  { title: "Higher National Diploma In Software Engineering", institution: "NIBM",              year: "2023", type: "Diploma"      },
+  { title: "Higher National Diploma In Software Engineering", institution: "NIBM",              year: "2024", type: "Diploma"      },
 ];
 
 const TYPES = ["All", ...Array.from(new Set(qualifications.map(q => q.type)))];
