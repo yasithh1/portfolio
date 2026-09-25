@@ -1,81 +1,153 @@
+/* ── Qualifications Section ─────────────────────────────── */
 .qualifications-section {
-  padding: 100px 20px;
-  background: #000; /* same as Projects section */
-  color: #e2e8f0;   /* same text color */
+  padding: 100px 40px;
+  background: #000;
+  color: #e2e8f0;
   text-align: center;
 }
 
 .section-title {
   font-size: 2.5rem;
-  color: #ffffff;
-  margin-bottom: 50px;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 32px;
   position: relative;
 }
-
 .section-title::after {
   content: "";
   display: block;
-  width: 60px;
-  height: 3px;
+  width: 60px; height: 3px;
   background: #38bdf8;
   margin: 10px auto 0;
   border-radius: 2px;
 }
 
+/* ── Filter pills ── */
+.qual-filters {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+.qual-filter-btn {
+  background: transparent;
+  border: 1px solid #1e293b;
+  color: #64748b;
+  border-radius: 20px;
+  padding: 7px 18px;
+  font-size: 0.83rem;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.2s;
+}
+.qual-filter-btn:hover { border-color: #38bdf8; color: #38bdf8; }
+.qual-filter-btn.active {
+  background: #38bdf8; border-color: #38bdf8;
+  color: #000; font-weight: 700;
+}
+
+/* ── Grid ── */
 .qualification-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 24px;
   max-width: 1100px;
   margin: 0 auto;
 }
 
+/* ── Card ── */
 .qualification-card {
-  background-color: #0f172a;
-  padding: 30px;
-  border: 1px solid #334155;
+  position: relative;
+  background: #080f1f;
+  border: 1px solid #1e293b;
   border-radius: 14px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
-  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  padding: 28px 26px 24px;
+  text-align: left;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+.qualification-card:hover {
+  border-color: #38bdf840;
+  box-shadow: 0 10px 30px #38bdf812;
 }
 
-.qualification-card:hover {
-  transform: translateY(-8px) scale(1.02);
-  border-color: #38bdf8;
-  box-shadow: 0 12px 30px rgba(56, 189, 248, 0.3);
+/* year badge top-right */
+.qual-year-badge {
+  position: absolute;
+  top: 18px; right: 18px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #334155;
+  letter-spacing: 0.08em;
+}
+
+/* type chip */
+.qual-type-chip {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 20px;
+  border: 1px solid;
+  margin-bottom: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 }
 
 .qualification-card h3 {
-  font-size: 1.4rem;
-  color: #38bdf8;
-  margin-bottom: 12px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #f1f5f9;
+  margin-bottom: 10px;
+  line-height: 1.45;
 }
 
-.qualification-card p {
-  font-size: 1rem;
-  color: #94a3b8;
-  margin-bottom: 6px;
-}
-
-.qualification-card span {
-  font-size: 0.9rem;
+.qual-institution {
+  font-size: 0.88rem;
   color: #64748b;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.qual-institution-icon { font-size: 0.9rem; }
+
+/* bottom accent line */
+.qual-card-accent {
+  position: absolute;
+  bottom: 0; left: 0;
+  width: 0; height: 2px;
+  background: linear-gradient(90deg, #38bdf8, #818cf8);
+  border-radius: 0 0 14px 14px;
+  transition: width 0.4s ease;
+}
+.qualification-card:hover .qual-card-accent { width: 100%; }
+
+/* empty */
+.qual-empty {
+  color: #334155;
+  padding: 40px;
 }
 
+/* show more */
 .show-more-btn {
-  background-color: #38bdf8;
-  color: #0f172a;
-  padding: 12px 28px;
+  background: #38bdf8;
+  color: #000;
+  padding: 12px 30px;
   margin-top: 40px;
   border: none;
   border-radius: 8px;
-  font-weight: bold;
-  font-size: 1rem;
+  font-weight: 700;
+  font-size: 0.95rem;
   cursor: pointer;
-  transition: background 0.3s ease, transform 0.2s ease;
+  font-family: inherit;
+  transition: background 0.25s, transform 0.2s;
+}
+.show-more-btn:hover {
+  background: #0ea5e9;
+  transform: translateY(-3px);
 }
 
-.show-more-btn:hover {
-  background-color: #0ea5e9;
-  transform: translateY(-3px);
+@media (max-width: 600px) {
+  .qualifications-section { padding: 70px 20px; }
 }
