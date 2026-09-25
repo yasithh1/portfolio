@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">ToolzEasy free browser tools</title>
+  <desc id="desc">A dark navy and mint preview of the ToolzEasy website with PDF, image, text and utility tools.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0b1420"/><stop offset="1" stop-color="#111d2a"/></linearGradient>
+    <linearGradient id="mint" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#91efd0"/><stop offset="1" stop-color="#51c9aa"/></linearGradient>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="24"/></filter>
+  </defs>
+  <rect width="1200" height="720" rx="30" fill="url(#bg)"/>
+  <circle cx="950" cy="210" r="190" fill="#52d8b1" opacity=".10" filter="url(#glow)"/>
+  <path d="M0 82h1200" stroke="#263543"/>
+  <rect x="58" y="26" width="34" height="34" rx="10" fill="url(#mint)"/>
+  <path d="M68 43h14M75 36v14" stroke="#0b1420" stroke-width="3" stroke-linecap="round"/>
+  <text x="105" y="51" fill="#f2f7f8" font-family="Arial,sans-serif" font-size="25" font-weight="700">ToolzEasy</text>
+  <text x="898" y="49" fill="#a9b9c5" font-family="Arial,sans-serif" font-size="15">PDF tools　 Image tools　 Text tools　 Utilities</text>
+  <rect x="60" y="128" width="216" height="34" rx="17" fill="#16342f" stroke="#2c6b5a"/>
+  <circle cx="79" cy="145" r="5" fill="#70e1c1"/>
+  <text x="94" y="150" fill="#9debd4" font-family="Arial,sans-serif" font-size="14" font-weight="700" letter-spacing="1.4">FREE BROWSER TOOLS</text>
+  <text x="60" y="236" fill="#f4f8f9" font-family="Arial,sans-serif" font-size="57" font-weight="700">Useful tools.</text>
+  <text x="60" y="304" fill="#f4f8f9" font-family="Arial,sans-serif" font-size="57" font-weight="700">Made easy.</text>
+  <text x="62" y="350" fill="#9eafbc" font-family="Arial,sans-serif" font-size="20">Merge PDFs, resize images, check text and get everyday</text>
+  <text x="62" y="379" fill="#9eafbc" font-family="Arial,sans-serif" font-size="20">tasks done — free, right in your browser.</text>
+  <rect x="60" y="410" width="180" height="52" rx="26" fill="url(#mint)"/>
+  <text x="88" y="443" fill="#0b1420" font-family="Arial,sans-serif" font-size="16" font-weight="700">Explore all tools　›</text>
+  <rect x="660" y="132" width="480" height="484" rx="24" fill="#121e2b" stroke="#2a3a47"/>
+  <text x="694" y="178" fill="#f0f5f6" font-family="Arial,sans-serif" font-size="20" font-weight="700">Choose a tool</text>
+  <text x="694" y="207" fill="#8fa2b0" font-family="Arial,sans-serif" font-size="14">Simple tools for everyday work</text>
+  <g font-family="Arial,sans-serif">
+    <rect x="692" y="235" width="198" height="142" rx="16" fill="#182633" stroke="#314552"/><rect x="712" y="255" width="38" height="38" rx="11" fill="#263c4b"/><text x="724" y="281" fill="#8de8ca" font-size="20" font-weight="700">P</text><text x="712" y="322" fill="#eef5f5" font-size="17" font-weight="700">PDF tools</text><text x="712" y="348" fill="#93a6b4" font-size="13">Merge, split, convert</text>
+    <rect x="910" y="235" width="198" height="142" rx="16" fill="#182633" stroke="#314552"/><rect x="930" y="255" width="38" height="38" rx="11" fill="#263c4b"/><text x="942" y="281" fill="#8de8ca" font-size="20" font-weight="700">I</text><text x="930" y="322" fill="#eef5f5" font-size="17" font-weight="700">Image tools</text><text x="930" y="348" fill="#93a6b4" font-size="13">Resize, crop, convert</text>
+    <rect x="692" y="397" width="198" height="142" rx="16" fill="#182633" stroke="#314552"/><rect x="712" y="417" width="38" height="38" rx="11" fill="#263c4b"/><text x="724" y="443" fill="#8de8ca" font-size="20" font-weight="700">T</text><text x="712" y="484" fill="#eef5f5" font-size="17" font-weight="700">Text tools</text><text x="712" y="510" fill="#93a6b4" font-size="13">Count, clean, convert</text>
+    <rect x="910" y="397" width="198" height="142" rx="16" fill="#182633" stroke="#314552"/><rect x="930" y="417" width="38" height="38" rx="11" fill="#263c4b"/><text x="942" y="443" fill="#8de8ca" font-size="20" font-weight="700">✦</text><text x="930" y="484" fill="#eef5f5" font-size="17" font-weight="700">Utilities</text><text x="930" y="510" fill="#93a6b4" font-size="13">QR, invoice, unit tools</text>
+  </g>
+  <text x="60" y="648" fill="#8ea1ae" font-family="Arial,sans-serif" font-size="15">NO SIGN-UP　 ·　 NO FILE UPLOADS　 ·　 FREE TO USE</text>
+</svg>
